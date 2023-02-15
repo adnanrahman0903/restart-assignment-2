@@ -30,7 +30,6 @@ body {
 
 .banner-section {
     display: flex;
-
 }
 
 .banner-section li {
@@ -84,5 +83,77 @@ ul li {
 
 .banner img {
     width: 1100px;
+}
 
+/************ Responsive Styles ************/
+
+/************ For Small Device ************/
+
+@media only screen and (max-width: 576px) {
+    .banner-section {
+        flex-direction: column;
+    }
+
+    .banner-section li {
+        padding-top: 60px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .banner-title {
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 50px;
+        color: #131313;
+    }
+
+    .banner-text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #474242;
+    }
+
+    .btn-primary {
+        padding: 15px 20px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+}
+
+/************ For Medium Device ************/
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .banner-logo {
+        line-height: 24px;
+    }
+
+    .banner-section li {
+        padding-top: 47px;
+        padding-right: 15px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .banner-title {
+        margin-top: 35px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        color: #131313;
+    }
+
+    .banner-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
 }
