@@ -10,6 +10,7 @@ body {
 }
 
 /************ Banner Part ************/
+
 .container {
     background: #FF900E1A;
 }
@@ -69,12 +70,12 @@ ul li {
     background: #FF900E;
     margin-top: 30px;
     margin-bottom: 50px;
-    padding: 20px 25px;
+    padding: 15px 20px;
     border: none;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .banner {
@@ -84,6 +85,77 @@ ul li {
 .banner img {
     width: 1100px;
 }
+
+/************ Team Part ************/
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.team {
+    width: 500px;
+}
+
+.team-profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.team-profile img {
+    width: 238px;
+    height: 238px;
+    border-radius: 10px;
+}
+
+.team-details {
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 20px;
+}
+
+.list {
+    color: #727272;
+}
+
+.our {
+    color: #131313;
+}
+
+.feature {
+    color: #FF900E;
+}
+
+.team-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************ Responsive Styles ************/
 
@@ -113,12 +185,6 @@ ul li {
         font-size: 18px;
         line-height: 24px;
         color: #474242;
-    }
-
-    .btn-primary {
-        padding: 15px 20px;
-        font-size: 15px;
-        line-height: 18px;
     }
 
     .banner img {
