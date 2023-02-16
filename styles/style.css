@@ -122,7 +122,8 @@ ul li {
 
 .team-title,
 .fact-title,
-.sponsors-title {
+.sponsors-title,
+.ratings-title {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -144,7 +145,8 @@ ul li {
 .team-text,
 .feature-text,
 .fact-text,
-.sponsors-text {
+.sponsors-text,
+.ratings-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -289,6 +291,71 @@ ul li {
     height: 40px;
     filter: grayscale(100%);
 
+}
+
+
+
+/************ Ratings Part ************/
+
+.top-ratings {
+    width: 100%;
+
+}
+
+.latest-courses {
+    background: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.ratings-container {
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.courses {
+    padding-left: 10px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+
+.course-banner img {
+    width: 300px;
+    height: 180px;
+}
+
+.course-title {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.course-author {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ED6B4F;
+}
+
+.ratings {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.filled {
+    font-size: 12px;
+    color: red;
+}
+
+.empty {
+    font-size: 12px;
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+.clock {
+    padding-left: 75px;
 }
 
 
