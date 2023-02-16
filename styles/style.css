@@ -354,31 +354,6 @@ ul li {
     opacity: 0.25;
 }
 
-.clock {
-    padding-left: 75px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -533,6 +508,28 @@ ul li {
 
     .sponsors img {
         width: 150px;
+    }
+
+
+
+    /************ Responsive Ratings Part For Small Device  ************/
+
+    .top-ratings {
+        width: 100%;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+
+    .course-banner img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .courses {
+        padding-left: 50px;
+        padding-bottom: 30px;
     }
 }
 
@@ -690,5 +687,17 @@ ul li {
 
     .sponsors img {
         width: 100px;
+    }
+
+
+
+    /************ Responsive Ratings Part For Medium Device ************/
+    .course-banner img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .courses {
+        padding-left: 20px;
     }
 }
