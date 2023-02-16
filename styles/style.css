@@ -121,7 +121,8 @@ ul li {
 }
 
 .team-title,
-.fact-title {
+.fact-title,
+.sponsors-title {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -142,7 +143,8 @@ ul li {
 
 .team-text,
 .feature-text,
-.fact-text {
+.fact-text,
+.sponsors-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -246,7 +248,6 @@ ul li {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
-    margin-bottom: 120px;
 }
 
 .facts-progress {
@@ -254,12 +255,11 @@ ul li {
     height: 150px;
     border: 1px solid #FF900E;
     border-radius: 8px;
-    transition: width 3s, height 3s, background-color 3s, transform 3s;
+    transition: width 3s, background-color 3s, transform 3s;
 }
 
 .facts-progress:hover {
     width: 200px;
-    height: 200px;
     background-color: lightskyblue;
 }
 
@@ -267,6 +267,54 @@ ul li {
     text-align: center;
     margin-top: 30px;
 }
+
+
+
+/************ Sponsors Part ************/
+
+.sponsor-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.sponsors img {
+    width: 130px;
+    height: 40px;
+    filter: grayscale(100%);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,7 +333,7 @@ ul li {
 
 @media only screen and (max-width: 576px) {
 
-    /************ Banner Part Responsive For Small Device  ************/
+    /************  Responsive Banner Part For Small Device  ************/
 
     .banner-section {
         flex-direction: column;
@@ -305,7 +353,7 @@ ul li {
         width: 100%;
     }
 
-    /************ Team Part Responsive For Small Device ************/
+    /************ Responsive Team Part For Small Device ************/
 
     .team-container {
         flex-direction: column;
@@ -328,7 +376,7 @@ ul li {
         padding-left: 15px;
     }
 
-    /************ Feature Part Responsive For Small Device  ************/
+    /************ Responsive Feature Part For Small Device  ************/
 
     .feature-section {
         width: 100%;
@@ -379,7 +427,7 @@ ul li {
         line-height: 24px;
     }
 
-    /************ Fact Part Responsive For Small Device  ************/
+    /************ Responsive Fact Part For Small Device  ************/
 
     .fact-header {
         text-align: center;
@@ -406,6 +454,18 @@ ul li {
 
     .fact-inner {
         margin-top: 10px;
+    }
+
+
+
+    /************ Responsive Sponsors Part For Small Device  ************/
+
+    .sponsors {
+        flex-wrap: wrap;
+    }
+
+    .sponsors img {
+        width: 150px;
     }
 }
 
@@ -442,7 +502,7 @@ ul li {
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
 
-    /************ Banner Part Responsive For Medium Device  ************/
+    /************ Responsive Banner Part For Medium Device  ************/
 
     .banner-logo {
         line-height: 24px;
@@ -468,7 +528,7 @@ ul li {
         width: 100%;
     }
 
-    /************ Team Part Responsive For Medium Device  ************/
+    /************ Responsive Team Part For Medium Device  ************/
 
     .team-container {
         flex-direction: column;
@@ -499,7 +559,7 @@ ul li {
     }
 
 
-    /************ Feature Part Responsive For Medium Device  ************/
+    /************ Responsive Feature Part For Medium Device  ************/
 
     .feature-section {
         width: 100%;
@@ -546,10 +606,22 @@ ul li {
         line-height: 24px;
     }
 
-    /************ Fact Part Responsive For Medium Device  ************/
+    /************ Responsive Fact Part For Medium Device  ************/
 
     .fact-header {
         text-align: center;
         margin-left: 0px;
+    }
+
+
+
+    /************ Responsive Sponsors Part For Medium Device ************/
+
+    .sponsors {
+        flex-wrap: wrap;
+    }
+
+    .sponsors img {
+        width: 100px;
     }
 }
