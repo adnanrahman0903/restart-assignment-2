@@ -36,7 +36,6 @@ body {
 }
 
 .banner-section li {
-
     padding-top: 60px;
     padding-right: 60px;
     font-weight: 500;
@@ -146,7 +145,8 @@ ul li {
 .feature-text,
 .fact-text,
 .sponsors-text,
-.ratings-text {
+.ratings-text,
+.footer-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -242,14 +242,17 @@ ul li {
 /************ Facts Part ************/
 
 .fact-header {
+    text-align: center;
     margin-top: 100px;
-    margin-left: 75px;
+    /* margin-left: 75px; */
 }
 
 .fact-container {
+    display: block;
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
+    padding-bottom: 80px;
 }
 
 .facts-progress {
@@ -257,11 +260,10 @@ ul li {
     height: 150px;
     border: 1px solid #FF900E;
     border-radius: 8px;
-    transition: width 3s, background-color 3s, transform 3s;
 }
 
 .facts-progress:hover {
-    width: 200px;
+    transform: skewX(-30deg);
     background-color: lightskyblue;
 }
 
@@ -276,7 +278,6 @@ ul li {
 
 .sponsor-container {
     text-align: center;
-    margin-top: 100px;
 }
 
 .sponsors {
@@ -290,7 +291,6 @@ ul li {
     width: 130px;
     height: 40px;
     filter: grayscale(100%);
-
 }
 
 
@@ -299,7 +299,6 @@ ul li {
 
 .top-ratings {
     width: 100%;
-
 }
 
 .latest-courses {
@@ -356,26 +355,33 @@ ul li {
 
 
 
+/************ Footer Part ************/
+
+.footer-text {
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #000000;
+}
 
 
 
 
 
+/************************************* Responsive Styles ***********************************/
 
 
 
+/************ Responsive For Small Device ************/
 
 
 
-/************ Responsive Styles ************/
-
-
-/************ For Small Device ************/
-
+/************  Responsive Banner Part For Small Device  ************/
 
 @media only screen and (max-width: 576px) {
-
-    /************  Responsive Banner Part For Small Device  ************/
 
     .banner-section {
         flex-direction: column;
@@ -394,6 +400,8 @@ ul li {
     .banner img {
         width: 100%;
     }
+
+
 
     /************ Responsive Team Part For Small Device ************/
 
@@ -418,13 +426,14 @@ ul li {
         padding-left: 15px;
     }
 
+
+
     /************ Responsive Feature Part For Small Device  ************/
 
     .feature-section {
         width: 100%;
         flex-direction: column;
         margin: 0px;
-
     }
 
     .feature-container {
@@ -445,13 +454,13 @@ ul li {
     }
 
     .feature-details {
-        margin-top: 15px;
+        margin-top: 10px;
         padding-left: 0px;
-
     }
 
     .feature-banner {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .feature-btn {
@@ -469,11 +478,12 @@ ul li {
         line-height: 24px;
     }
 
+
+
     /************ Responsive Fact Part For Small Device  ************/
 
     .fact-header {
-        text-align: center;
-        margin-top: 50px;
+        margin-top: 80px;
         margin-left: 0px;
     }
 
@@ -490,8 +500,8 @@ ul li {
     }
 
     .facts-progress:hover {
-        width: 75%;
-        height: 75%;
+        width: 50%;
+        height: 50%;
     }
 
     .fact-inner {
@@ -537,36 +547,13 @@ ul li {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /************ Responsive For Medium Device ************/
 
 
-@media only screen and (min-width: 577px) and (max-width: 992px) {
 
-    /************ Responsive Banner Part For Medium Device  ************/
+/************ Responsive Banner Part For Medium Device  ************/
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
 
     .banner-logo {
         line-height: 24px;
@@ -591,6 +578,8 @@ ul li {
     .banner img {
         width: 100%;
     }
+
+
 
     /************ Responsive Team Part For Medium Device  ************/
 
@@ -623,6 +612,7 @@ ul li {
     }
 
 
+
     /************ Responsive Feature Part For Medium Device  ************/
 
     .feature-section {
@@ -649,11 +639,13 @@ ul li {
     }
 
     .feature-details {
+        margin-top: 15px;
         padding-left: 0px;
     }
 
     .feature-banner {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .feature-btn {
@@ -668,13 +660,6 @@ ul li {
 
     .experience {
         line-height: 24px;
-    }
-
-    /************ Responsive Fact Part For Medium Device  ************/
-
-    .fact-header {
-        text-align: center;
-        margin-left: 0px;
     }
 
 
