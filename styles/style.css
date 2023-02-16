@@ -9,6 +9,8 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+
+
 /************ Banner Part ************/
 
 .container {
@@ -86,7 +88,10 @@ ul li {
     width: 1100px;
 }
 
+
+
 /************ Team Part ************/
+
 .team-container {
     display: flex;
     align-items: center;
@@ -130,20 +135,101 @@ ul li {
     color: #131313;
 }
 
-.feature {
+.feat {
     color: #FF900E;
 }
 
-.team-text {
+.team-text,
+.feature-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
     color: #727272;
 }
 
 
 
+/************ Features Part ************/
 
+.feature-section {
+    width: 1200px;
+    display: flex;
+    margin-left: 75px;
+    padding-top: 30px;
+}
+
+.feature-container {
+    width: 576px;
+}
+
+.features {
+    margin-top: 80px;
+}
+
+.features-header {
+    display: flex;
+}
+
+.vertical-hr {
+    width: 5px;
+    height: 106px;
+    background: #FF900E;
+    margin-right: 15px;
+}
+
+.feature {
+    background: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.681);
+    border-radius: 10px;
+}
+
+.features-title {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.feature-details {
+    margin-top: 90px;
+    padding-left: 100px;
+}
+
+.feature-banner {
+    width: 576px;
+    height: 880px;
+    border-radius: 5px;
+}
+
+.feature-btn {
+    margin-top: -65px;
+    margin-left: -60px;
+    padding: 50px 25px 30px;
+    background: #FF900E;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.year {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.experience {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
 
@@ -208,7 +294,84 @@ ul li {
         padding-left: 15px;
     }
 
+    /************ Feature Part Responsive For Small Device  ************/
+
+    .feature-section {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+
+    }
+
+    .feature-container {
+        width: 100%;
+    }
+
+    .features {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .features-header {
+        justify-content: center;
+    }
+
+    .feature {
+        text-align: center;
+    }
+
+    .feature-details {
+        margin-top: 15px;
+        padding-left: 0px;
+
+    }
+
+    .feature-banner {
+        width: 100%;
+    }
+
+    .feature-btn {
+        margin: 0px;
+        padding: 20px 30px 15px;
+    }
+
+    .year {
+        font-size: 36px;
+        line-height: 24px;
+    }
+
+    .experience {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /************ Responsive For Medium Device ************/
@@ -272,4 +435,51 @@ ul li {
         line-height: 25px;
     }
 
+
+    /************ Feature Part Responsive For Medium Device  ************/
+
+    .feature-section {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .feature-container {
+        width: 100%;
+    }
+
+    .features {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .features-header {
+        justify-content: center;
+    }
+
+    .feature {
+        text-align: center;
+    }
+
+    .feature-details {
+        padding-left: 0px;
+    }
+
+    .feature-banner {
+        width: 100%;
+    }
+
+    .feature-btn {
+        margin: 0px;
+        padding: 20px 30px 15px;
+    }
+
+    .year {
+        font-size: 36px;
+        line-height: 24px;
+    }
+
+    .experience {
+        line-height: 24px;
+    }
 }
